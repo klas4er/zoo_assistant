@@ -1,0 +1,189 @@
+Collecting vosk==0.3.45 (from -r requirements_minimal.txt (line 2))
+  Using cached vosk-0.3.45-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (1.8 kB)
+Collecting natasha==1.6.0 (from -r requirements_minimal.txt (line 5))
+  Using cached natasha-1.6.0-py3-none-any.whl.metadata (23 kB)
+Collecting pymorphy2==0.9.1 (from -r requirements_minimal.txt (line 6))
+  Using cached pymorphy2-0.9.1-py3-none-any.whl.metadata (3.6 kB)
+Collecting yargy>=0.16.0 (from -r requirements_minimal.txt (line 7))
+  Using cached yargy-0.16.0-py3-none-any.whl.metadata (3.5 kB)
+Collecting fastapi==0.104.1 (from -r requirements_minimal.txt (line 10))
+  Using cached fastapi-0.104.1-py3-none-any.whl.metadata (24 kB)
+Collecting uvicorn==0.24.0 (from -r requirements_minimal.txt (line 11))
+  Using cached uvicorn-0.24.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting python-multipart==0.0.6 (from -r requirements_minimal.txt (line 12))
+  Using cached python_multipart-0.0.6-py3-none-any.whl.metadata (2.5 kB)
+Collecting jinja2==3.1.2 (from -r requirements_minimal.txt (line 13))
+  Using cached Jinja2-3.1.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting sqlalchemy==2.0.23 (from -r requirements_minimal.txt (line 16))
+  Using cached SQLAlchemy-2.0.23-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.6 kB)
+Collecting psycopg2-binary==2.9.9 (from -r requirements_minimal.txt (line 17))
+  Using cached psycopg2_binary-2.9.9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.4 kB)
+Collecting numpy==1.26.1 (from -r requirements_minimal.txt (line 20))
+  Using cached numpy-1.26.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting pandas==2.1.2 (from -r requirements_minimal.txt (line 21))
+  Using cached pandas-2.1.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Collecting pydantic==2.4.2 (from -r requirements_minimal.txt (line 22))
+  Using cached pydantic-2.4.2-py3-none-any.whl.metadata (158 kB)
+Collecting python-dotenv==1.0.0 (from -r requirements_minimal.txt (line 23))
+  Using cached python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+Collecting tqdm==4.66.1 (from -r requirements_minimal.txt (line 24))
+  Using cached tqdm-4.66.1-py3-none-any.whl.metadata (57 kB)
+Collecting cffi>=1.0 (from vosk==0.3.45->-r requirements_minimal.txt (line 2))
+  Using cached cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting requests (from vosk==0.3.45->-r requirements_minimal.txt (line 2))
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting srt (from vosk==0.3.45->-r requirements_minimal.txt (line 2))
+  Using cached srt-3.5.3.tar.gz (28 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting websockets (from vosk==0.3.45->-r requirements_minimal.txt (line 2))
+  Using cached websockets-15.0.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting razdel>=0.5.0 (from natasha==1.6.0->-r requirements_minimal.txt (line 5))
+  Using cached razdel-0.5.0-py3-none-any.whl.metadata (10.0 kB)
+Collecting navec>=0.9.0 (from natasha==1.6.0->-r requirements_minimal.txt (line 5))
+  Using cached navec-0.10.0-py3-none-any.whl.metadata (21 kB)
+Collecting slovnet>=0.6.0 (from natasha==1.6.0->-r requirements_minimal.txt (line 5))
+  Using cached slovnet-0.6.0-py3-none-any.whl.metadata (34 kB)
+Collecting ipymarkup>=0.8.0 (from natasha==1.6.0->-r requirements_minimal.txt (line 5))
+  Using cached ipymarkup-0.9.0-py3-none-any.whl.metadata (5.6 kB)
+Collecting dawg-python>=0.7.1 (from pymorphy2==0.9.1->-r requirements_minimal.txt (line 6))
+  Using cached DAWG_Python-0.7.2-py2.py3-none-any.whl.metadata (7.0 kB)
+Collecting pymorphy2-dicts-ru<3.0,>=2.4 (from pymorphy2==0.9.1->-r requirements_minimal.txt (line 6))
+  Using cached pymorphy2_dicts_ru-2.4.417127.4579844-py2.py3-none-any.whl.metadata (2.1 kB)
+Collecting docopt>=0.6 (from pymorphy2==0.9.1->-r requirements_minimal.txt (line 6))
+  Using cached docopt-0.6.2.tar.gz (25 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting anyio<4.0.0,>=3.7.1 (from fastapi==0.104.1->-r requirements_minimal.txt (line 10))
+  Using cached anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting starlette<0.28.0,>=0.27.0 (from fastapi==0.104.1->-r requirements_minimal.txt (line 10))
+  Using cached starlette-0.27.0-py3-none-any.whl.metadata (5.8 kB)
+Requirement already satisfied: typing-extensions>=4.8.0 in /usr/local/lib/python3.11/site-packages (from fastapi==0.104.1->-r requirements_minimal.txt (line 10)) (4.14.1)
+Requirement already satisfied: click>=7.0 in /usr/local/lib/python3.11/site-packages (from uvicorn==0.24.0->-r requirements_minimal.txt (line 11)) (8.2.1)
+Requirement already satisfied: h11>=0.8 in /usr/local/lib/python3.11/site-packages (from uvicorn==0.24.0->-r requirements_minimal.txt (line 11)) (0.16.0)
+Collecting MarkupSafe>=2.0 (from jinja2==3.1.2->-r requirements_minimal.txt (line 13))
+  Using cached MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Requirement already satisfied: greenlet!=0.4.17 in /usr/local/lib/python3.11/site-packages (from sqlalchemy==2.0.23->-r requirements_minimal.txt (line 16)) (3.2.3)
+Collecting python-dateutil>=2.8.2 (from pandas==2.1.2->-r requirements_minimal.txt (line 21))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas==2.1.2->-r requirements_minimal.txt (line 21))
+  Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.1 (from pandas==2.1.2->-r requirements_minimal.txt (line 21))
+  Using cached tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Requirement already satisfied: annotated-types>=0.4.0 in /usr/local/lib/python3.11/site-packages (from pydantic==2.4.2->-r requirements_minimal.txt (line 22)) (0.7.0)
+Collecting pydantic-core==2.10.1 (from pydantic==2.4.2->-r requirements_minimal.txt (line 22))
+  Using cached pydantic_core-2.10.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+Requirement already satisfied: idna>=2.8 in /usr/local/lib/python3.11/site-packages (from anyio<4.0.0,>=3.7.1->fastapi==0.104.1->-r requirements_minimal.txt (line 10)) (3.10)
+Requirement already satisfied: sniffio>=1.1 in /usr/local/lib/python3.11/site-packages (from anyio<4.0.0,>=3.7.1->fastapi==0.104.1->-r requirements_minimal.txt (line 10)) (1.3.1)
+Collecting pycparser (from cffi>=1.0->vosk==0.3.45->-r requirements_minimal.txt (line 2))
+  Using cached pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Collecting intervaltree>=3 (from ipymarkup>=0.8.0->natasha==1.6.0->-r requirements_minimal.txt (line 5))
+  Using cached intervaltree-3.1.0.tar.gz (32 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.1.2->-r requirements_minimal.txt (line 21))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting charset_normalizer<4,>=2 (from requests->vosk==0.3.45->-r requirements_minimal.txt (line 2))
+  Using cached charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (36 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->vosk==0.3.45->-r requirements_minimal.txt (line 2))
+  Using cached urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests->vosk==0.3.45->-r requirements_minimal.txt (line 2))
+  Using cached certifi-2025.8.3-py3-none-any.whl.metadata (2.4 kB)
+Collecting sortedcontainers<3.0,>=2.0 (from intervaltree>=3->ipymarkup>=0.8.0->natasha==1.6.0->-r requirements_minimal.txt (line 5))
+  Using cached sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+Using cached vosk-0.3.45-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (7.2 MB)
+Using cached natasha-1.6.0-py3-none-any.whl (34.4 MB)
+Using cached pymorphy2-0.9.1-py3-none-any.whl (55 kB)
+Using cached fastapi-0.104.1-py3-none-any.whl (92 kB)
+Using cached uvicorn-0.24.0-py3-none-any.whl (59 kB)
+Using cached python_multipart-0.0.6-py3-none-any.whl (45 kB)
+Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Using cached SQLAlchemy-2.0.23-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.2 MB)
+Using cached psycopg2_binary-2.9.9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+Using cached numpy-1.26.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+Using cached pandas-2.1.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.2 MB)
+Using cached pydantic-2.4.2-py3-none-any.whl (395 kB)
+Using cached python_dotenv-1.0.0-py3-none-any.whl (19 kB)
+Using cached tqdm-4.66.1-py3-none-any.whl (78 kB)
+Downloading pydantic_core-2.10.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 71.8 MB/s eta 0:00:00
+Downloading yargy-0.16.0-py3-none-any.whl (33 kB)
+Downloading anyio-3.7.1-py3-none-any.whl (80 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.9/80.9 kB 41.9 MB/s eta 0:00:00
+Downloading cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (467 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 467.2/467.2 kB 143.8 MB/s eta 0:00:00
+Downloading DAWG_Python-0.7.2-py2.py3-none-any.whl (11 kB)
+Downloading ipymarkup-0.9.0-py3-none-any.whl (14 kB)
+Downloading MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (23 kB)
+Downloading navec-0.10.0-py3-none-any.whl (23 kB)
+Downloading pymorphy2_dicts_ru-2.4.417127.4579844-py2.py3-none-any.whl (8.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.2/8.2 MB 101.9 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 61.9 MB/s eta 0:00:00
+Downloading pytz-2025.2-py2.py3-none-any.whl (509 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 509.2/509.2 kB 96.9 MB/s eta 0:00:00
+Downloading razdel-0.5.0-py3-none-any.whl (21 kB)
+Downloading slovnet-0.6.0-py3-none-any.whl (46 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.7/46.7 kB 16.0 MB/s eta 0:00:00
+Downloading starlette-0.27.0-py3-none-any.whl (66 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.0/67.0 kB 23.7 MB/s eta 0:00:00
+Downloading tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 347.8/347.8 kB 85.3 MB/s eta 0:00:00
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.7/64.7 kB 21.6 MB/s eta 0:00:00
+Downloading websockets-15.0.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (182 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 182.3/182.3 kB 56.2 MB/s eta 0:00:00
+Downloading certifi-2025.8.3-py3-none-any.whl (161 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 161.2/161.2 kB 49.9 MB/s eta 0:00:00
+Downloading charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (150 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 150.3/150.3 kB 47.4 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.8/129.8 kB 40.8 MB/s eta 0:00:00
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.6/117.6 kB 41.8 MB/s eta 0:00:00
+Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Building wheels for collected packages: docopt, srt, intervaltree
+  Building wheel for docopt (setup.py): started
+  Building wheel for docopt (setup.py): finished with status 'done'
+  Created wheel for docopt: filename=docopt-0.6.2-py2.py3-none-any.whl size=13706 sha256=a7383194d379e16686b17ffafd305637b7e9e87dabf81f4c5cb688621bcf6c84
+  Stored in directory: /root/.cache/pip/wheels/1a/b0/8c/4b75c4116c31f83c8f9f047231251e13cc74481cca4a78a9ce
+  Building wheel for srt (setup.py): started
+  Building wheel for srt (setup.py): finished with status 'done'
+  Created wheel for srt: filename=srt-3.5.3-py3-none-any.whl size=22426 sha256=277863e6aed7e17d53e2fd09a652bca6b0c997047694b1eba7bbfefc2808a0c6
+  Stored in directory: /root/.cache/pip/wheels/1f/43/f1/23ee9119497fcb57d9f7046fbf34c6d9027c46a1fa7824cf08
+  Building wheel for intervaltree (setup.py): started
+  Building wheel for intervaltree (setup.py): finished with status 'done'
+  Created wheel for intervaltree: filename=intervaltree-3.1.0-py2.py3-none-any.whl size=26096 sha256=420c97f53e3da82ee36f6435290237cad4d49cba3bba8078e526ff30bee6fb68
+  Stored in directory: /root/.cache/pip/wheels/31/d7/d9/eec6891f78cac19a693bd40ecb8365d2f4613318c145ec9816
+Successfully built docopt srt intervaltree
+Installing collected packages: sortedcontainers, razdel, pytz, pymorphy2-dicts-ru, docopt, dawg-python, websockets, uvicorn, urllib3, tzdata, tqdm, srt, sqlalchemy, six, python-multipart, python-dotenv, pymorphy2, pydantic-core, pycparser, psycopg2-binary, numpy, MarkupSafe, intervaltree, charset_normalizer, certifi, anyio, yargy, starlette, requests, python-dateutil, pydantic, navec, jinja2, ipymarkup, cffi, vosk, slovnet, pandas, fastapi, natasha
+  Attempting uninstall: uvicorn
+    Found existing installation: uvicorn 0.34.0
+    Uninstalling uvicorn-0.34.0:
+      Successfully uninstalled uvicorn-0.34.0
+  Attempting uninstall: pydantic-core
+    Found existing installation: pydantic_core 2.16.2
+    Uninstalling pydantic_core-2.16.2:
+      Successfully uninstalled pydantic_core-2.16.2
+  Attempting uninstall: anyio
+    Found existing installation: anyio 4.9.0
+    Uninstalling anyio-4.9.0:
+      Successfully uninstalled anyio-4.9.0
+  Attempting uninstall: starlette
+    Found existing installation: starlette 0.46.2
+    Uninstalling starlette-0.46.2:
+      Successfully uninstalled starlette-0.46.2
+  Attempting uninstall: pydantic
+    Found existing installation: pydantic 2.6.1
+    Uninstalling pydantic-2.6.1:
+      Successfully uninstalled pydantic-2.6.1
+  Attempting uninstall: fastapi
+    Found existing installation: fastapi 0.115.12
+    Uninstalling fastapi-0.115.12:
+      Successfully uninstalled fastapi-0.115.12
+Successfully installed MarkupSafe-3.0.2 anyio-3.7.1 certifi-2025.8.3 cffi-1.17.1 charset_normalizer-3.4.3 dawg-python-0.7.2 docopt-0.6.2 fastapi-0.104.1 intervaltree-3.1.0 ipymarkup-0.9.0 jinja2-3.1.2 natasha-1.6.0 navec-0.10.0 numpy-1.26.1 pandas-2.1.2 psycopg2-binary-2.9.9 pycparser-2.22 pydantic-2.4.2 pydantic-core-2.10.1 pymorphy2-0.9.1 pymorphy2-dicts-ru-2.4.417127.4579844 python-dateutil-2.9.0.post0 python-dotenv-1.0.0 python-multipart-0.0.6 pytz-2025.2 razdel-0.5.0 requests-2.32.5 six-1.17.0 slovnet-0.6.0 sortedcontainers-2.4.0 sqlalchemy-2.0.23 srt-3.5.3 starlette-0.27.0 tqdm-4.66.1 tzdata-2025.2 urllib3-2.5.0 uvicorn-0.24.0 vosk-0.3.45 websockets-15.0.1 yargy-0.16.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip is available: 24.0 -> 25.2
+[notice] To update, run: pip install --upgrade pip

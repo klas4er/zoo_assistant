@@ -1,0 +1,156 @@
+Collecting whisper==1.1.10 (from -r requirements.txt (line 2))
+  Downloading whisper-1.1.10.tar.gz (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.8/42.8 kB 4.7 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting openai-whisper==20231117 (from -r requirements.txt (line 3))
+  Downloading openai-whisper-20231117.tar.gz (798 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 798.6/798.6 kB 41.7 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting vosk==0.3.45 (from -r requirements.txt (line 4))
+  Downloading vosk-0.3.45-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (1.8 kB)
+Collecting torch==2.1.0 (from -r requirements.txt (line 5))
+  Downloading torch-2.1.0-cp311-cp311-manylinux1_x86_64.whl.metadata (25 kB)
+Collecting torchaudio==2.1.0 (from -r requirements.txt (line 6))
+  Downloading torchaudio-2.1.0-cp311-cp311-manylinux1_x86_64.whl.metadata (5.7 kB)
+Collecting librosa==0.10.1 (from -r requirements.txt (line 7))
+  Downloading librosa-0.10.1-py3-none-any.whl.metadata (8.3 kB)
+Collecting natasha==1.6.0 (from -r requirements.txt (line 10))
+  Downloading natasha-1.6.0-py3-none-any.whl.metadata (23 kB)
+Collecting spacy==3.7.2 (from -r requirements.txt (line 11))
+  Downloading spacy-3.7.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+Collecting pymorphy2==0.9.1 (from -r requirements.txt (line 12))
+  Downloading pymorphy2-0.9.1-py3-none-any.whl.metadata (3.6 kB)
+Collecting yargy==0.15.1 (from -r requirements.txt (line 13))
+  Downloading yargy-0.15.1-py3-none-any.whl.metadata (3.4 kB)
+Collecting fastapi==0.104.1 (from -r requirements.txt (line 16))
+  Downloading fastapi-0.104.1-py3-none-any.whl.metadata (24 kB)
+Collecting uvicorn==0.24.0 (from -r requirements.txt (line 17))
+  Downloading uvicorn-0.24.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting python-multipart==0.0.6 (from -r requirements.txt (line 18))
+  Downloading python_multipart-0.0.6-py3-none-any.whl.metadata (2.5 kB)
+Collecting jinja2==3.1.2 (from -r requirements.txt (line 19))
+  Downloading Jinja2-3.1.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting sqlalchemy==2.0.23 (from -r requirements.txt (line 22))
+  Downloading SQLAlchemy-2.0.23-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.6 kB)
+Collecting alembic==1.12.1 (from -r requirements.txt (line 23))
+  Downloading alembic-1.12.1-py3-none-any.whl.metadata (7.3 kB)
+Collecting psycopg2-binary==2.9.9 (from -r requirements.txt (line 24))
+  Downloading psycopg2_binary-2.9.9-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.4 kB)
+Collecting redis==5.0.1 (from -r requirements.txt (line 25))
+  Downloading redis-5.0.1-py3-none-any.whl.metadata (8.9 kB)
+Collecting celery==5.3.4 (from -r requirements.txt (line 26))
+  Downloading celery-5.3.4-py3-none-any.whl.metadata (21 kB)
+Collecting numpy==1.26.1 (from -r requirements.txt (line 29))
+  Downloading numpy-1.26.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 27.5 MB/s eta 0:00:00
+Collecting pandas==2.1.2 (from -r requirements.txt (line 30))
+  Downloading pandas-2.1.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Collecting pydantic==2.4.2 (from -r requirements.txt (line 31))
+  Downloading pydantic-2.4.2-py3-none-any.whl.metadata (158 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 158.6/158.6 kB 61.8 MB/s eta 0:00:00
+Collecting python-dotenv==1.0.0 (from -r requirements.txt (line 32))
+  Downloading python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+Collecting tqdm==4.66.1 (from -r requirements.txt (line 33))
+  Downloading tqdm-4.66.1-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.6/57.6 kB 27.6 MB/s eta 0:00:00
+Collecting six (from whisper==1.1.10->-r requirements.txt (line 2))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting triton<3,>=2.0.0 (from openai-whisper==20231117->-r requirements.txt (line 3))
+  Downloading triton-2.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.4 kB)
+Collecting numba (from openai-whisper==20231117->-r requirements.txt (line 3))
+  Downloading numba-0.61.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.8 kB)
+Collecting more-itertools (from openai-whisper==20231117->-r requirements.txt (line 3))
+  Downloading more_itertools-10.7.0-py3-none-any.whl.metadata (37 kB)
+Collecting tiktoken (from openai-whisper==20231117->-r requirements.txt (line 3))
+  Downloading tiktoken-0.11.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0 (from vosk==0.3.45->-r requirements.txt (line 4))
+  Downloading cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
+Collecting requests (from vosk==0.3.45->-r requirements.txt (line 4))
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting srt (from vosk==0.3.45->-r requirements.txt (line 4))
+  Downloading srt-3.5.3.tar.gz (28 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting websockets (from vosk==0.3.45->-r requirements.txt (line 4))
+  Downloading websockets-15.0.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting filelock (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading filelock-3.19.1-py3-none-any.whl.metadata (2.1 kB)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.11/site-packages (from torch==2.1.0->-r requirements.txt (line 5)) (4.14.1)
+Collecting sympy (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading networkx-3.5-py3-none-any.whl.metadata (6.3 kB)
+Collecting fsspec (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading fsspec-2025.7.0-py3-none-any.whl.metadata (12 kB)
+Collecting nvidia-cuda-nvrtc-cu12==12.1.105 (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading nvidia_cuda_nvrtc_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cuda-runtime-cu12==12.1.105 (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading nvidia_cuda_runtime_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cuda-cupti-cu12==12.1.105 (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading nvidia_cuda_cupti_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cudnn-cu12==8.9.2.26 (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading nvidia_cudnn_cu12-8.9.2.26-py3-none-manylinux1_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cublas-cu12==12.1.3.1 (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading nvidia_cublas_cu12-12.1.3.1-py3-none-manylinux1_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cufft-cu12==11.0.2.54 (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading nvidia_cufft_cu12-11.0.2.54-py3-none-manylinux1_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-curand-cu12==10.3.2.106 (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading nvidia_curand_cu12-10.3.2.106-py3-none-manylinux1_x86_64.whl.metadata (1.5 kB)
+Collecting nvidia-cusolver-cu12==11.4.5.107 (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading nvidia_cusolver_cu12-11.4.5.107-py3-none-manylinux1_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-cusparse-cu12==12.1.0.106 (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading nvidia_cusparse_cu12-12.1.0.106-py3-none-manylinux1_x86_64.whl.metadata (1.6 kB)
+Collecting nvidia-nccl-cu12==2.18.1 (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading nvidia_nccl_cu12-2.18.1-py3-none-manylinux1_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-nvtx-cu12==12.1.105 (from torch==2.1.0->-r requirements.txt (line 5))
+  Downloading nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl.metadata (1.7 kB)
+Collecting triton<3,>=2.0.0 (from openai-whisper==20231117->-r requirements.txt (line 3))
+  Downloading triton-2.1.0-0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.3 kB)
+Collecting audioread>=2.1.9 (from librosa==0.10.1->-r requirements.txt (line 7))
+  Downloading audioread-3.0.1-py3-none-any.whl.metadata (8.4 kB)
+Collecting scipy>=1.2.0 (from librosa==0.10.1->-r requirements.txt (line 7))
+  Downloading scipy-1.16.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 25.9 MB/s eta 0:00:00
+Collecting scikit-learn>=0.20.0 (from librosa==0.10.1->-r requirements.txt (line 7))
+  Downloading scikit_learn-1.7.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting joblib>=0.14 (from librosa==0.10.1->-r requirements.txt (line 7))
+  Downloading joblib-1.5.2-py3-none-any.whl.metadata (5.6 kB)
+Collecting decorator>=4.3.0 (from librosa==0.10.1->-r requirements.txt (line 7))
+  Downloading decorator-5.2.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting soundfile>=0.12.1 (from librosa==0.10.1->-r requirements.txt (line 7))
+  Downloading soundfile-0.13.1-py2.py3-none-manylinux_2_28_x86_64.whl.metadata (16 kB)
+Collecting pooch>=1.0 (from librosa==0.10.1->-r requirements.txt (line 7))
+  Downloading pooch-1.8.2-py3-none-any.whl.metadata (10 kB)
+Collecting soxr>=0.3.2 (from librosa==0.10.1->-r requirements.txt (line 7))
+  Downloading soxr-0.5.0.post1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+Collecting lazy-loader>=0.1 (from librosa==0.10.1->-r requirements.txt (line 7))
+  Downloading lazy_loader-0.4-py3-none-any.whl.metadata (7.6 kB)
+Collecting msgpack>=1.0 (from librosa==0.10.1->-r requirements.txt (line 7))
+  Downloading msgpack-1.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.4 kB)
+Collecting razdel>=0.5.0 (from natasha==1.6.0->-r requirements.txt (line 10))
+  Downloading razdel-0.5.0-py3-none-any.whl.metadata (10.0 kB)
+Collecting navec>=0.9.0 (from natasha==1.6.0->-r requirements.txt (line 10))
+  Downloading navec-0.10.0-py3-none-any.whl.metadata (21 kB)
+Collecting slovnet>=0.6.0 (from natasha==1.6.0->-r requirements.txt (line 10))
+  Downloading slovnet-0.6.0-py3-none-any.whl.metadata (34 kB)
+INFO: pip is looking at multiple versions of natasha to determine which version is compatible with other requirements. This could take a while.
+ERROR: Cannot install -r requirements.txt (line 10) and yargy==0.15.1 because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    The user requested yargy==0.15.1
+    natasha 1.6.0 depends on yargy>=0.16.0
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+[notice] A new release of pip is available: 24.0 -> 25.2
+[notice] To update, run: pip install --upgrade pip

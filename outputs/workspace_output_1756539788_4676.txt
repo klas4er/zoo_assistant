@@ -1,0 +1,5 @@
+total 4
+drwxr-xr-x 3 root root   36 Aug 30 07:42 .
+drwxr-xr-x 1 root root  122 Aug 30 07:41 ..
+drwxr-xr-x 2 root root   94 Aug 30 07:43 outputs
+-rw-r--r-- 1 root root 1155 Aug 30 07:41 todo.md

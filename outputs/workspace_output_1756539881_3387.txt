@@ -1,0 +1,17 @@
+Archive:  dataset2.zip
+  inflating: zoo_assistant/audio_samples/Наблюдение_15.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_3.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_8.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_4.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_13.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_16.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_10.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_11.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_5.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_9.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_1.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_6.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_2.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_7.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_12.mp3  
+  inflating: zoo_assistant/audio_samples/Наблюдение_14.mp3  

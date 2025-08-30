@@ -1,0 +1,6 @@
+total 4
+drwxr-xr-x 2 root root 138 Aug 30 07:43 .
+drwxr-xr-x 3 root root  36 Aug 30 07:42 ..
+-rw-r--r-- 1 root root   0 Aug 30 07:42 workspace_output_1756539741_9556.txt
+-rw-r--r-- 1 root root 193 Aug 30 07:43 workspace_output_1756539788_4676.txt
+-rw-r--r-- 1 root root   0 Aug 30 07:43 workspace_output_1756539792_9708.txt

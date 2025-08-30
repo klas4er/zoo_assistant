@@ -1,0 +1,1 @@
+zoo_assistant/audio_samples/Наблюдение_1.mp3: Audio file with ID3 version 2.4.0, contains: MPEG ADTS, layer III, v1, 192 kbps, 48 kHz, Monaural
