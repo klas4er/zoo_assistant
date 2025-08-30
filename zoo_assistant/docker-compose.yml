@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - DATABASE_URL=sqlite:///./zoo_assistant.db
+      - HOST=0.0.0.0
+      - PORT=8000
+      - DEBUG=False
+    restart: unless-stopped
+
+  # Uncomment to use PostgreSQL instead of SQLite
+  # db:
+  #   image: postgres:14
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   environment:
+  #     - POSTGRES_PASSWORD=postgres
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_DB=zoo_assistant
+  #   restart: unless-stopped
+
+  # Uncomment to use Redis for task queue
+  # redis:
+  #   image: redis:7
+  #   volumes:
+  #     - redis_data:/data
+  #   restart: unless-stopped
+
+  # Uncomment to use Celery for async tasks
+  # worker:
+  #   build: .
+  #   command: celery -A core_engine.tasks worker --loglevel=info
+  #   volumes:
+  #     - ./data:/app/data
+  #   depends_on:
+  #     - app
+  #     - redis
+  #   environment:
+  #     - DATABASE_URL=sqlite:///./zoo_assistant.db
+  #     - CELERY_BROKER_URL=redis://redis:6379/0
+  #     - CELERY_RESULT_BACKEND=redis://redis:6379/0
+  #   restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
