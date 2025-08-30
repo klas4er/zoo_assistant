@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Assistant - Система наблюдений за животными</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <h1>Zoo Assistant</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" data-page="upload">Загрузка аудио</a></li>
+                    <li><a href="#" data-page="observations">Наблюдения</a></li>
+                    <li><a href="#" data-page="animals">Животные</a></li>
+                    <li><a href="#" data-page="reports">Отчеты</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <span>Смотритель</span>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </header>
+
+        <main>
+            <!-- Upload Audio Page -->
+            <section id="upload-page" class="page active">
+                <div class="page-header">
+                    <h2>Загрузка аудио наблюдений</h2>
+                    <p>Загрузите аудиозапись с вашими наблюдениями для автоматической обработки</p>
+                </div>
+                
+                <div class="upload-container">
+                    <div class="upload-area" id="drop-area">
+                        <form id="upload-form">
+                            <i class="fas fa-microphone"></i>
+                            <p>Перетащите аудиофайл сюда или</p>
+                            <input type="file" id="audio-file" accept="audio/*" hidden>
+                            <button type="button" id="select-file-btn" class="btn primary">Выберите файл</button>
+                        </form>
+                    </div>
+                    
+                    <div class="upload-preview" id="upload-preview" style="display: none;">
+                        <div class="file-info">
+                            <i class="fas fa-file-audio"></i>
+                            <div>
+                                <h3 id="file-name">filename.mp3</h3>
+                                <p id="file-size">0 MB</p>
+                            </div>
+                            <button id="remove-file-btn" class="btn icon-btn"><i class="fas fa-times"></i></button>
+                        </div>
+                        <audio id="audio-preview" controls></audio>
+                        <button id="upload-btn" class="btn primary">Обработать запись</button>
+                    </div>
+                </div>
+                
+                <div class="processing-result" id="processing-result" style="display: none;">
+                    <div class="result-header">
+                        <h3>Результаты обработки</h3>
+                        <div class="processing-status">
+                            <span id="status-text">Обработка...</span>
+                            <div class="spinner" id="processing-spinner"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-content">
+                        <div class="result-section">
+                            <h4>Транскрипция</h4>
+                            <div class="transcription-box" id="transcription-text">
+                                Загрузка транскрипции...
+                            </div>
+                        </div>
+                        
+                        <div class="result-section">
+                            <h4>Извлеченные данные</h4>
+                            <div class="extracted-data" id="extracted-data">
+                                <div class="data-loading">Извлечение данных...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Observations Page -->
+            <section id="observations-page" class="page">
+                <div class="page-header">
+                    <h2>Журнал наблюдений</h2>
+                    <div class="page-actions">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Поиск наблюдений...">
+                        </div>
+                        <button class="btn secondary"><i class="fas fa-filter"></i> Фильтр</button>
+                    </div>
+                </div>
+                
+                <div class="observations-list" id="observations-list">
+                    <div class="loading">Загрузка наблюдений...</div>
+                </div>
+                
+                <div class="pagination">
+                    <button class="btn icon-btn"><i class="fas fa-chevron-left"></i></button>
+                    <span>Страница 1 из 5</span>
+                    <button class="btn icon-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+            
+            <!-- Animals Page -->
+            <section id="animals-page" class="page">
+                <div class="page-header">
+                    <h2>Животные</h2>
+                    <div class="page-actions">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Поиск животных...">
+                        </div>
+                        <button class="btn primary"><i class="fas fa-plus"></i> Добавить животное</button>
+                    </div>
+                </div>
+                
+                <div class="animals-grid" id="animals-grid">
+                    <div class="loading">Загрузка данных о животных...</div>
+                </div>
+            </section>
+            
+            <!-- Reports Page -->
+            <section id="reports-page" class="page">
+                <div class="page-header">
+                    <h2>Отчеты</h2>
+                    <div class="page-actions">
+                        <input type="date" id="report-date" class="date-picker">
+                        <button class="btn secondary"><i class="fas fa-download"></i> Экспорт</button>
+                    </div>
+                </div>
+                
+                <div class="report-container">
+                    <div class="report-summary">
+                        <div class="summary-card">
+                            <i class="fas fa-clipboard-list"></i>
+                            <div>
+                                <h3 id="observations-count">0</h3>
+                                <p>Наблюдений</p>
+                            </div>
+                        </div>
+                        <div class="summary-card">
+                            <i class="fas fa-weight"></i>
+                            <div>
+                                <h3 id="measurements-count">0</h3>
+                                <p>Измерений</p>
+                            </div>
+                        </div>
+                        <div class="summary-card">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <div>
+                                <h3 id="feedings-count">0</h3>
+                                <p>Кормлений</p>
+                            </div>
+                        </div>
+                        <div class="summary-card">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <h3 id="alerts-count">0</h3>
+                                <p>Тревожных состояний</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="report-details" id="report-details">
+                        <div class="loading">Загрузка отчета...</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
